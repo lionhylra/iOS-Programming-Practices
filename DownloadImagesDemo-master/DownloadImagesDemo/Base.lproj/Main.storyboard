@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DdX-HC-8Dk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="IcA-cT-pDl">
+            <objects>
+                <tableViewController id="u86-oL-sMr" customClass="ViewController" customModule="DownloadImagesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lLz-C5-Cft">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="gLF-56-akR">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="OaZ-hn-ZKh">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OaZ-hn-ZKh" id="XM6-oS-GUJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaF-U4-2Zu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1q-Z0-Mae">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download1">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge1:" destination="u86-oL-sMr" eventType="touchUpInside" id="dvl-JP-IwN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kaF-U4-2Zu" secondAttribute="bottom" constant="-8" id="POf-Qf-ix0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="E1q-Z0-Mae" secondAttribute="trailing" constant="5" id="USA-xh-tBb"/>
+                                                <constraint firstItem="E1q-Z0-Mae" firstAttribute="centerY" secondItem="kaF-U4-2Zu" secondAttribute="centerY" id="WVp-N2-q7z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kaF-U4-2Zu" secondAttribute="trailing" constant="110" id="Y0O-vq-idI"/>
+                                                <constraint firstItem="E1q-Z0-Mae" firstAttribute="leading" secondItem="kaF-U4-2Zu" secondAttribute="trailing" constant="36" id="dV4-yy-aUE"/>
+                                                <constraint firstItem="kaF-U4-2Zu" firstAttribute="leading" secondItem="XM6-oS-GUJ" secondAttribute="leadingMargin" constant="-8" id="wut-2Y-0xy"/>
+                                                <constraint firstItem="kaF-U4-2Zu" firstAttribute="top" secondItem="XM6-oS-GUJ" secondAttribute="topMargin" constant="-8" id="y6q-fv-FlC"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="dV4-yy-aUE"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="nz6-Tj-hOz">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nz6-Tj-hOz" id="pUH-wl-YL0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jKV-Pe-pci">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NES-Xp-Kza">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download2">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge2:" destination="u86-oL-sMr" eventType="touchUpInside" id="LqE-HL-lhe"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jKV-Pe-pci" secondAttribute="bottom" constant="-8" id="4dM-Ja-AlX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jKV-Pe-pci" secondAttribute="trailing" constant="110" id="9bG-oM-oz5"/>
+                                                <constraint firstItem="NES-Xp-Kza" firstAttribute="centerY" secondItem="jKV-Pe-pci" secondAttribute="centerY" id="I7V-pq-WIy"/>
+                                                <constraint firstItem="jKV-Pe-pci" firstAttribute="leading" secondItem="pUH-wl-YL0" secondAttribute="leadingMargin" constant="-8" id="Il9-Ve-jEH"/>
+                                                <constraint firstItem="NES-Xp-Kza" firstAttribute="leading" secondItem="jKV-Pe-pci" secondAttribute="trailing" constant="36" id="hJ6-3C-aNs"/>
+                                                <constraint firstItem="jKV-Pe-pci" firstAttribute="top" secondItem="pUH-wl-YL0" secondAttribute="topMargin" constant="-8" id="xXF-rd-nJq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NES-Xp-Kza" secondAttribute="trailing" constant="5" id="xl4-kt-g7d"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="hJ6-3C-aNs"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="aWn-Eg-Vxe">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aWn-Eg-Vxe" id="C1T-Pw-Cf6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-iF-Rba">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1x-ed-EpL">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download3">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge3:" destination="u86-oL-sMr" eventType="touchUpInside" id="M9Q-3M-2EF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="j1x-ed-EpL" firstAttribute="centerY" secondItem="e7l-iF-Rba" secondAttribute="centerY" id="0Ki-kh-IxZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="e7l-iF-Rba" secondAttribute="trailing" constant="110" id="I1E-O2-cUN"/>
+                                                <constraint firstItem="e7l-iF-Rba" firstAttribute="leading" secondItem="C1T-Pw-Cf6" secondAttribute="leadingMargin" constant="-8" id="Izz-kf-Nb9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="j1x-ed-EpL" secondAttribute="trailing" constant="5" id="T2b-Ll-UT3"/>
+                                                <constraint firstItem="j1x-ed-EpL" firstAttribute="leading" secondItem="e7l-iF-Rba" secondAttribute="trailing" constant="36" id="bdw-SN-OXd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="e7l-iF-Rba" secondAttribute="bottom" constant="-8" id="jBS-gI-ahO"/>
+                                                <constraint firstItem="e7l-iF-Rba" firstAttribute="top" secondItem="C1T-Pw-Cf6" secondAttribute="topMargin" constant="-8" id="rmA-Fd-3uT"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="bdw-SN-OXd"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="ZcR-v2-5lL">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZcR-v2-5lL" id="MWV-Hg-eBp">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-ye-V7H">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcb-y3-6Fd">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download4">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge4:" destination="u86-oL-sMr" eventType="touchUpInside" id="6hJ-e6-RMj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="d6u-ye-V7H" secondAttribute="bottom" constant="-8" id="3OF-4g-WUj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="d6u-ye-V7H" secondAttribute="trailing" constant="110" id="6Ky-9c-Gu1"/>
+                                                <constraint firstItem="Tcb-y3-6Fd" firstAttribute="leading" secondItem="d6u-ye-V7H" secondAttribute="trailing" constant="36" id="Fse-dH-quu"/>
+                                                <constraint firstItem="d6u-ye-V7H" firstAttribute="top" secondItem="MWV-Hg-eBp" secondAttribute="topMargin" constant="-8" id="Ghq-5Z-Oww"/>
+                                                <constraint firstItem="d6u-ye-V7H" firstAttribute="leading" secondItem="MWV-Hg-eBp" secondAttribute="leadingMargin" constant="-8" id="TfD-0Q-65j"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Tcb-y3-6Fd" secondAttribute="trailing" constant="5" id="u88-c2-7i7"/>
+                                                <constraint firstItem="Tcb-y3-6Fd" firstAttribute="centerY" secondItem="d6u-ye-V7H" secondAttribute="centerY" id="vgt-w0-5NU"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Fse-dH-quu"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="76b-ga-J5A">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="76b-ga-J5A" id="ESa-3s-Uqy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSP-gv-8vO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yop-0b-QVd">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download5">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge5:" destination="u86-oL-sMr" eventType="touchUpInside" id="Jf0-hY-oMX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vSP-gv-8vO" firstAttribute="leading" secondItem="ESa-3s-Uqy" secondAttribute="leadingMargin" constant="-8" id="JYv-nw-15X"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vSP-gv-8vO" secondAttribute="trailing" constant="110" id="Vza-7T-jga"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vSP-gv-8vO" secondAttribute="bottom" constant="-8" id="XLH-Wq-SFE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yop-0b-QVd" secondAttribute="trailing" constant="5" id="YEZ-en-QDa"/>
+                                                <constraint firstItem="yop-0b-QVd" firstAttribute="leading" secondItem="vSP-gv-8vO" secondAttribute="trailing" constant="36" id="ai9-qo-ikI"/>
+                                                <constraint firstItem="vSP-gv-8vO" firstAttribute="top" secondItem="ESa-3s-Uqy" secondAttribute="topMargin" constant="-8" id="irT-j7-qRa"/>
+                                                <constraint firstItem="yop-0b-QVd" firstAttribute="centerY" secondItem="vSP-gv-8vO" secondAttribute="centerY" id="rWD-TV-Tsd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ai9-qo-ikI"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="u0N-6D-CMU">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0N-6D-CMU" id="LZo-jK-lmZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7G-bi-xm2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="482" height="140"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZh-yH-mUs">
+                                                    <rect key="frame" x="509" y="55" width="78" height="30"/>
+                                                    <state key="normal" title="Download6">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downloadIamge6:" destination="u86-oL-sMr" eventType="touchUpInside" id="ff0-ct-Sug"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CZh-yH-mUs" secondAttribute="trailing" constant="5" id="2MC-jy-2Nz"/>
+                                                <constraint firstItem="i7G-bi-xm2" firstAttribute="top" secondItem="LZo-jK-lmZ" secondAttribute="topMargin" constant="-8" id="9pZ-an-O6J"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="i7G-bi-xm2" secondAttribute="trailing" constant="110" id="Jao-Dg-Bec"/>
+                                                <constraint firstItem="i7G-bi-xm2" firstAttribute="leading" secondItem="LZo-jK-lmZ" secondAttribute="leadingMargin" constant="-8" id="N94-1c-6oT"/>
+                                                <constraint firstItem="CZh-yH-mUs" firstAttribute="centerY" secondItem="i7G-bi-xm2" secondAttribute="centerY" id="QF4-J7-uxW"/>
+                                                <constraint firstItem="CZh-yH-mUs" firstAttribute="leading" secondItem="i7G-bi-xm2" secondAttribute="trailing" constant="36" id="fUn-Jo-8tw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="i7G-bi-xm2" secondAttribute="bottom" constant="-8" id="gfq-h0-ftx"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="fUn-Jo-8tw"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="u86-oL-sMr" id="CK3-Z1-uPp"/>
+                            <outlet property="delegate" destination="u86-oL-sMr" id="Ni4-UL-sfn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="lyG-gR-VOB"/>
+                    <connections>
+                        <outlet property="imageView1" destination="kaF-U4-2Zu" id="A0c-xL-EZc"/>
+                        <outlet property="imageView2" destination="jKV-Pe-pci" id="J8c-45-492"/>
+                        <outlet property="imageView3" destination="e7l-iF-Rba" id="d3V-WK-SDY"/>
+                        <outlet property="imageView4" destination="d6u-ye-V7H" id="d1L-Q1-ZjZ"/>
+                        <outlet property="imageView5" destination="vSP-gv-8vO" id="eJ2-kJ-MoQ"/>
+                        <outlet property="imageView6" destination="i7G-bi-xm2" id="HDy-sQ-jWS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgy-uK-gRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uen-Fz-l6C">
+            <objects>
+                <navigationController id="DdX-HC-8Dk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uR0-Gd-mol">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="u86-oL-sMr" kind="relationship" relationship="rootViewController" id="U0y-Be-4LV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dop-uF-B0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="273"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,5 @@
+Question:
+Given a list of integer numbers (greater than or equal to zero), and a integer number. Find all the possible pairs(pairs are unique).
+For example, 
+given: [1,2,3,3,4,5,7,8] and 3
+the pairs should be: (1,4) (2,5) (4,7) (5,8)
